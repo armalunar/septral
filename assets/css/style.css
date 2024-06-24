@@ -478,3 +478,9 @@ section.services .content .boxes .box a:hover {
     line-height: 12px;
     padding: 13px;
   }
+.neway-img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 90px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
