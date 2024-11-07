@@ -1,134 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
-    <!-- Primary Meta Tags -->
-    <title>💲septral</title>
-    <link rel="icon" href="assets/img/test1.jpg">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Sept - Site">
-    <meta name="description" content="Sobre mim kraikk">
-
-    <!-- Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Preparando o "Colapso Final"</title>
+    <!-- Linkando a fonte 'Roboto' -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Linkando o CSS externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-    <div class="player-ctrl">
-        <!-- Play Button -->
-        <a id="podcast-play" onclick="playShow()"><i class="fas fa-play" style='color:#4b494b'></i></a>
-
-        <!-- Pause Button -->
-        <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="fa fa-pause" style="color:#4e4e4b"></i></a>
+    <h1>Preparando o "Colapso Final"</h1>
+    <div id="countdown">
+        <span id="days" class="countdown-unit"></span>
+        <span id="hours" class="countdown-unit"></span>
+        <span id="minutes" class="countdown-unit"></span>
+        <span id="seconds" class="countdown-unit"></span>
     </div>
 
-    <!-- Audio player -->
-    <audio id="podcast-audio">
-        <source src="https://cdn.discordapp.com/attachments/1226597559053717544/1251498692423450704/SpotifyMate.com_-_Astronomical_-_Tavin.mp3?ex=666ecc7b&is=666d7afb&hm=0ef7c606b5feeca86814987a842bfbb4c4bfab2f96eefb833b7b015850a3d824&" type="audio/mp3">
-    </audio>
+    <div id="septral">Estão todos fudidos</div>
 
-    <!-- Nav Bar -->
-    <header>
-        <nav>
-            <div class="header_logo">
-                <a href="#"><img src="assets/img/logo.gif" alt="" srcset=""></a>
-            </div>
-            <div class="header_links">
-                <ul class="nav_links">
-                    <li class="nav_link"><a href="#">Home</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Main -->
-    <section class="main">
-        <img src="assets/img/test1.jpg" alt="" srcset="">
-        <span>sept</span>
-        <p>Opa, bem vindos seus loko💙</p>
-        <ul>
-            <li><a target="_blank" href="https://discord.gg/neway"><i class="fab fa-discord"></i></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/septral_32/"><i class="fab fa-instagram"></i></a></li>
-            <li><a target="_blank" href="https://www.youtube.com/channel/UC5hMrLDTnFz6hm_MYx03EBg"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-        <div class="gotodown">
-            <a href="#about"><i class='bx bx-chevrons-down'></i></a>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="infos reveal">
-        <div class="title">
-            <span>SOBRE MIM</span>
-            <hr>
-        </div>
-        <div class="content">
-            <div class="boxe">
-                <div class="left">
-                    <img src="assets/img/perfil.jpg" alt="">
-                </div>
-                <div class="right">
-                    <h1>septral</h1>
-                    <p>
-                        <i class='fas fa-laptop' style='font-size:16px;color:rgb(255, 255, 255)'></i>Developer JS and PY<br>
-                        <i class='fas fa-wallet' style='font-size:16px;color:rgb(255, 255, 255)'></i>Faturando alguns dígitos<br>
-                        <i class='fas fa-heart' style='font-size:16px;color:rgb(255, 255, 255)'></i>Founder Neway
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="infos reveal services">
-        <div class="title">
-            <span>SERVERS</span>
-            <hr>
-        </div>
-        <div class="content">
-            <div class="boxes">
-                <!-- Card Neway -->
-                <div class="box">
-                    <img src="assets/img/neway.png" alt="Neway Server" class="neway-img">
-                    <span>Neway - Loja</span>
-                    <p>Loja com qualidade e segurança</p>
-                    <ul>
-                        <li>Streamings</li>
-                        <li>Nitros</li>
-                        <li>E muito mais</li>
-                    </ul>
-                    <a href="https://discord.gg/neway" class="btn-neway">Entre Agora</a>
-                </div>
-
-                <!-- Card Denuncias -->
-                <div class="box">
-                    <img src="assets/img/denuncias.png" alt="Denuncias Server" class="neway-img">
-                    <span>Denuncias - Server</span>
-                    <p>Proteja-se de scammers</p>
-                    <ul>
-                        <li>Suporte 24/7</li>
-                        <li>Anti-Scammers</li>
-                        <li>Comunidade ativa</li>
-                    </ul>
-                    <a href="https://discord.gg/denuncias" class="btn-denuncias">Entre Agora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> sept. Todos os direitos reservados.</p>
-        </div>
+    <!-- Botões -->
+    <div class="buttons">
+        <a href="https://www.instagram.com/septral_32/" class="button" target="_blank">IG</a>
+        <a href="https://www.exemplo2.com" class="button" target="_blank">INFO</a>
     </div>
 
-    <!-- Javascript -->
-    <script src="assets/js/app.js"></script>
+    <!-- Linkando o JS externo -->
+    <script src="script.js"></script>
 </body>
+
 </html>
