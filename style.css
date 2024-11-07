@@ -53,6 +53,7 @@ h1 {
     font-size: 3em;
     margin-bottom: 20px;
     z-index: 1; /* Traz o título para frente */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Contagem regressiva */
@@ -133,11 +134,6 @@ h1 {
     }
 }
 
-/* Adiciona sombra ao texto do título para melhor legibilidade */
-h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
 /* Adiciona a animação suave à página */
 @keyframes fadeIn {
     0% {
@@ -151,4 +147,55 @@ h1 {
 /* Transição suave ao carregar a página */
 body {
     animation: fadeIn 2s ease-in-out;
+}
+
+/* Media Queries para tornar o site responsivo */
+
+/* Para telas menores que 768px (telas de tablet e dispositivos móveis) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em; /* Tamanho menor do título */
+    }
+
+    #countdown {
+        font-size: 2em; /* Tamanho menor da contagem regressiva */
+    }
+
+    .countdown-unit {
+        font-size: 1.2em; /* Tamanho menor das unidades de tempo */
+    }
+
+    .button {
+        font-size: 1em; /* Tamanho menor do botão */
+        padding: 12px 24px; /* Botões menores */
+    }
+
+    #septral {
+        font-size: 3em; /* Tamanho do texto 'Septral' menor */
+    }
+}
+
+/* Para telas menores que 480px (smartphones em modo retrato) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Título ainda menor */
+    }
+
+    #countdown {
+        font-size: 1.8em; /* Contagem regressiva ainda menor */
+    }
+
+    .button {
+        font-size: 0.9em; /* Botões menores */
+        padding: 10px 20px; /* Botões mais compactos */
+    }
+
+    #septral {
+        font-size: 2.5em; /* Texto 'Septral' mais compacto */
+    }
+
+    /* Ajusta o espaço entre os elementos para telas muito pequenas */
+    .buttons {
+        margin-top: 20px;
+    }
 }
